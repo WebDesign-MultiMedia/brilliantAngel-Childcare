@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-cream font-body text-ink antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  :focus-visible {
+    outline: 3px solid #3B9EE8;
+    outline-offset: 3px;
+    border-radius: 10px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .section-y {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-semibold text-ink-soft shadow-soft ring-1 ring-cream-200;
+  }
+  /* Tactile "3D" push button: a solid bottom shadow that compresses on press. */
+  .btn-push {
+    @apply relative inline-flex select-none items-center justify-center gap-2 rounded-2xl px-6 py-3.5 font-display text-lg font-semibold transition-[transform,box-shadow] duration-150 ease-out active:translate-y-1;
+  }
+  .btn-sun {
+    @apply btn-push bg-sun text-ink shadow-push-sun hover:-translate-y-0.5 active:shadow-push-sun-down;
+  }
+  .btn-sky {
+    @apply btn-push bg-sky text-ink shadow-push-sky hover:-translate-y-0.5 active:shadow-push-sky-down;
+  }
+  .btn-white {
+    @apply btn-push bg-white text-ink shadow-push-white hover:-translate-y-0.5 active:shadow-none;
+  }
+  .card {
+    @apply rounded-3xl bg-white shadow-card ring-1 ring-cream-200;
+  }
+}
+
+.bg-dots {
+  background-image: radial-gradient(rgba(30, 41, 59, 0.07) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+}
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
