@@ -245,7 +245,7 @@ export default function Scene3D({ active = true, label }) {
       gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
     >
       <ambientLight intensity={0.85} />
-      <hemisphereLight args={['#ffffff', '#FFE3D9', 0.6]} />
+      <hemisphereLight args={['#ffffff', '#F9E2E7', 0.6]} />
       <directionalLight
         position={[4, 6, 5]}
         intensity={1.4}
@@ -259,16 +259,16 @@ export default function Scene3D({ active = true, label }) {
       <Rig />
 
       <Cloud position={[-2.6, 2.1, -2]} scale={0.9} color="#ffffff" speed={0.18} />
-      <Cloud position={[2.7, 2.4, -2.6]} scale={1.05} color="#E6F4FF" speed={0.13} />
-      <Cloud position={[3.0, -0.4, -3.2]} scale={0.7} color="#FFF4F0" speed={0.21} />
-      <Cloud position={[-3.2, -0.2, -3.5]} scale={0.65} color="#EAFBEF" speed={0.16} />
+      <Cloud position={[2.7, 2.4, -2.6]} scale={1.05} color="#E8F4FC" speed={0.13} />
+      <Cloud position={[3.0, -0.4, -3.2]} scale={0.7} color="#FCEBEF" speed={0.21} />
+      <Cloud position={[-3.2, -0.2, -3.5]} scale={0.65} color="#F5ECFE" speed={0.16} />
 
       <AngelStar burst={burst} onClick={() => setBurst((b) => b + 1)} />
 
-      <ToyBlock position={[-1.75, -0.95, 0.5]} faces={['A', 'B', 'C', '1']} color="#7CC6FE" ink="#1E293B" speed={0.35} scale={0.95} />
-      <ToyBlock position={[1.8, -0.9, 0.3]} faces={['1', '2', '3', 'B']} color="#FF9E80" ink="#1E293B" speed={-0.3} scale={0.9} />
-      <ToyBlock position={[-0.7, -1.6, 1.4]} faces={['C', 'A', '★', '4']} color="#80ED99" ink="#1E293B" speed={0.25} scale={0.62} />
-      <ToyBlock position={[0.95, -1.65, 1.5]} faces={['5', 'A', 'B', 'C']} color="#FFD166" ink="#1E293B" speed={-0.4} scale={0.58} />
+      <ToyBlock position={[-1.75, -0.95, 0.5]} faces={['A', 'B', 'C', '1']} color="#8FC8EE" ink="#23406A" speed={0.35} scale={0.95} />
+      <ToyBlock position={[1.8, -0.9, 0.3]} faces={['1', '2', '3', 'B']} color="#E5A4B1" ink="#23406A" speed={-0.3} scale={0.9} />
+      <ToyBlock position={[-0.7, -1.6, 1.4]} faces={['C', 'A', '★', '4']} color="#D7B2F7" ink="#23406A" speed={0.25} scale={0.62} />
+      <ToyBlock position={[0.95, -1.65, 1.5]} faces={['5', 'A', 'B', 'C']} color="#FFD166" ink="#23406A" speed={-0.4} scale={0.58} />
 
       <Sparkles
         key={burst}
@@ -280,7 +280,7 @@ export default function Scene3D({ active = true, label }) {
         opacity={0.9}
       />
 
-      <ContactShadows position={[0, -2.45, 0]} opacity={0.25} scale={12} blur={2.6} far={5} color="#1E293B" />
+      <ContactShadows position={[0, -2.45, 0]} opacity={0.25} scale={12} blur={2.6} far={5} color="#23406A" />
     </Canvas>
   );
 }

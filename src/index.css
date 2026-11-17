@@ -16,7 +16,7 @@
     @apply font-display;
   }
   :focus-visible {
-    outline: 3px solid #3B9EE8;
+    outline: 3px solid #3E6EAC;
     outline-offset: 3px;
     border-radius: 10px;
   }
@@ -59,7 +59,7 @@
 }
 
 .bg-dots {
-  background-image: radial-gradient(rgba(30, 41, 59, 0.07) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(rgba(35, 64, 106, 0.07) 1.5px, transparent 1.5px);
   background-size: 22px 22px;
 }
 .no-scrollbar::-webkit-scrollbar { display: none; }

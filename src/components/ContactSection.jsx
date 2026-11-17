@@ -94,10 +94,10 @@ export default function ContactSection() {
                   <h3 className="text-sm font-bold uppercase tracking-wider text-ink-mute">{c.hoursLabel}</h3>
                   <span
                     className={`inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-bold ${
-                      openNow ? 'bg-mint-soft text-mint-deep' : 'bg-coral-soft text-coral-deep'
+                      openNow ? 'bg-emerald-100 text-emerald-700' : 'bg-coral-soft text-coral-deep'
                     }`}
                   >
-                    <span className={`h-1.5 w-1.5 rounded-full ${openNow ? 'bg-mint-deep' : 'bg-coral-deep'}`} />
+                    <span className={`h-1.5 w-1.5 rounded-full ${openNow ? 'bg-emerald-600' : 'bg-coral-deep'}`} />
                     {openNow ? c.openNow : c.closedNow}
                   </span>
                 </div>

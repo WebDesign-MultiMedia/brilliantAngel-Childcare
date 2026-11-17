@@ -4,25 +4,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        cream: { DEFAULT: '#FFFDF9', 100: '#FAF6F0', 200: '#F3EBDD' },
-        sky: { DEFAULT: '#7CC6FE', soft: '#D9EEFF', deep: '#3B9EE8' },
-        sun: { DEFAULT: '#FFD166', soft: '#FFF1CC', deep: '#E8AE2A' },
-        coral: { DEFAULT: '#FF9E80', soft: '#FFE3D9', deep: '#F07452' },
-        mint: { DEFAULT: '#80ED99', soft: '#DDF9E3', deep: '#3FC468' },
-        ink: { DEFAULT: '#1E293B', soft: '#475569', mute: '#64748B' },
+        // Palette taken from their current Squarespace theme + logo.
+        // Token names kept from the first build: coral = their rose, mint = their lavender.
+        cream: { DEFAULT: '#FFF7E5', 100: '#FDEED0', 200: '#F3DFBA' },
+        sky: { DEFAULT: '#8FC8EE', soft: '#DCEEFA', deep: '#3E6EAC' },
+        sun: { DEFAULT: '#FFD166', soft: '#FFF0C7', deep: '#E8AE2A' },
+        coral: { DEFAULT: '#E5A4B1', soft: '#F9E2E7', deep: '#C46A7E' },
+        mint: { DEFAULT: '#D7B2F7', soft: '#F2E6FD', deep: '#9563C9' },
+        ink: { DEFAULT: '#23406A', soft: '#3F5B82', mute: '#677C9A' },
       },
       fontFamily: {
         display: ['Fredoka', 'ui-rounded', 'system-ui', 'sans-serif'],
         body: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        soft: '0 10px 30px -12px rgba(30,41,59,0.18)',
-        card: '0 20px 50px -20px rgba(30,41,59,0.25)',
+        soft: '0 10px 30px -12px rgba(35,64,106,0.18)',
+        card: '0 20px 50px -20px rgba(35,64,106,0.25)',
         'push-sun': '0 6px 0 0 #E8AE2A, 0 14px 24px -8px rgba(232,174,42,0.55)',
         'push-sun-down': '0 2px 0 0 #E8AE2A, 0 6px 12px -6px rgba(232,174,42,0.55)',
-        'push-sky': '0 6px 0 0 #3B9EE8, 0 14px 24px -8px rgba(59,158,232,0.45)',
-        'push-sky-down': '0 2px 0 0 #3B9EE8, 0 6px 12px -6px rgba(59,158,232,0.45)',
-        'push-white': '0 6px 0 0 #E2D8C6, 0 14px 24px -10px rgba(30,41,59,0.2)',
+        'push-sky': '0 6px 0 0 #3E6EAC, 0 14px 24px -8px rgba(62,110,172,0.4)',
+        'push-sky-down': '0 2px 0 0 #3E6EAC, 0 6px 12px -6px rgba(62,110,172,0.4)',
+        'push-white': '0 6px 0 0 #EAD3A8, 0 14px 24px -10px rgba(35,64,106,0.2)',
       },
       keyframes: {
         glow: {
